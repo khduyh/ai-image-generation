@@ -84,18 +84,18 @@ const CreatePost = () => {
           Create
         </h1>
 
-        <p className='mt-2 text-[#666e75] text-[16px] max-w-[500px]'>
+        <p className='mt-2 text-[#666e75] text-[16px]'>
           Create imaginative and visually stunning images through DALL-E AI and share them with the comunity
         </p>
       </div>
 
-      <form className='mt-16 max-w-3xl' onSubmit={handleSubmit}>
+      <form className='mt-14 max-w-3xl' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-5'>
           <FormField 
             labelName="Your name"
             type="text"
             name="name"
-            placeholder="John Doe"
+            placeholder="Type your name here"
             value={form.name}
             handleChange={handleChange}
           />
