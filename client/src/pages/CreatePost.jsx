@@ -32,12 +32,12 @@ const CreatePost = () => {
 
         setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}`})
       } catch (error) {
-        alert(error);
+        alert('Please check again!');
       } finally {
         setGeneratingImg (false);
       }
     } else {
-      alert('Please enter a prompt');
+      alert('Please enter a description');
     }
   }
 
@@ -59,12 +59,12 @@ const CreatePost = () => {
         // alert('Success');
         navigate('/');
       } catch (error) {
-        alert(error);
+        alert('Please check again, your description might have an inappropriate word!');
       } finally {
         setLoading(false);
       }
     } else {
-    alert('Please generate an image with proper details');
+    alert('Please generate an image with proper details!');
     }
   }
 
@@ -101,7 +101,7 @@ const CreatePost = () => {
           />
 
           <FormField 
-            labelName="Prompt"
+            labelName="Description"
             type="text"
             name="prompt"
             placeholder="A plush toy robot sitting against a yellow wall"
