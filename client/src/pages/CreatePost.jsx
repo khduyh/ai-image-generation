@@ -32,7 +32,7 @@ const CreatePost = () => {
 
         setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}`})
       } catch (error) {
-        alert('Please check again!');
+        alert('Please check again, your description might have an inappropriate word!');
       } finally {
         setGeneratingImg (false);
       }
